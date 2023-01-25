@@ -2,10 +2,10 @@ const employee = require('./lib/employee');
 const Manager = require('./lib/manager');
 const Engineer = require('./lib/engineer');
 const Intern = require('./lib/intern');
-const generateTeam = require('./util/generateHtml');
-const generateManager = require('./util/generateHtml');
-const generateEngineer = require('./util/generateHtml');
-const generateIntern = require('./util/generateHtml');
+const buildHtml = require('./util/generateHtml');
+// const generateManager = require('./util/generateHtml');
+// const generateEngineer = require('./util/generateHtml');
+// const generateIntern = require('./util/generateHtml');
 
 
 
@@ -91,7 +91,7 @@ const init = async () => {
         await init();
     } else {
         console.log(team)
-        const html = generateTeam(team);
+        const html = buildHtml(team);
        
         await writeFileAsync(path.join(__dirname, 'dist', 'index.html'), html);
 
