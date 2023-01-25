@@ -1,4 +1,6 @@
 // create the team
+
+
 const generateTeam = team => {
 
     // create the manager html
@@ -79,6 +81,8 @@ const generateTeam = team => {
 
 }
 
+
+
 // export function to generate entire page
 module.exports = team => {
 
@@ -108,7 +112,7 @@ module.exports = team => {
     <div class="container">
         <div class="row">
             <div class="team-area col-12 d-flex justify-content-center">
-                ${generateTeam(team)}
+           ${generateTeam(team)}
             </div>
         </div>
     </div>
@@ -116,3 +120,5 @@ module.exports = team => {
 </html>
     `;
 };
+
+module.exports = generateTeam;
