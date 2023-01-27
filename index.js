@@ -17,6 +17,12 @@ const team = [];
 
 const questions = [
     {
+        type: 'list',
+        name: 'role',
+        message: 'What is the role of the employee you would like to add?',
+        choices: ['Manager', 'Engineer', 'Intern']
+    },
+    {
         type: 'input',
         name: 'name',
         message: 'What is the name of the employee?'
@@ -34,12 +40,7 @@ const questions = [
         message: 'What is the email of the employee?'
 
     },
-    {
-        type: 'list',
-        name: 'role',
-        message: 'What is the role of the employee?',
-        choices: ['Manager', 'Engineer', 'Intern']
-    },
+
     {
         type: 'input',
         name: 'officeNumber',
@@ -68,7 +69,7 @@ const questions = [
 
 const init = async () => { // async function to use await 
 
-    
+    console.log('Welcome to the Team Profile Generator! Please answer the following questions to build your team profile.')
     const answers = await inquirer.prompt(questions); // answers is an object with all the answers to the questions
     let employee; // employee is a variable that will be assigned to a new instance of a class
     switch(answers.role) { // switch statement to determine which class to create a new instance of
