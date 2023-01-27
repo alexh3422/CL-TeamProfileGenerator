@@ -29,5 +29,8 @@ You can then take that html file and move it into your own project repository on
 
 Please refer to my github profile at https://www.github.com/alexh3422 for any further questions 
 
+
+### screenshot of the CL Team Profile Generator running in a terminal window
 <img width="1021" alt="Screenshot of the CL Team Profile Generator application opened up in a terminal window" src="https://user-images.githubusercontent.com/115325648/215018953-a993dfb4-fa89-48f4-a8ae-bb7155f8b765.png">
 
+### Screenshot of what the generated HTML file will look like 
