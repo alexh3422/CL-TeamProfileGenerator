@@ -19,7 +19,9 @@ USAGE
 
 As soon as you press the ' N ' key when it asks if you would like to add another employee you should see a message letting you know that it is creating your teams profile page. 
 
-When it is done you will see another message stating that it has been built as well as where the html file was created. 
+When it is done you will see another message stating that it has been built. 
+
+You can locate the html file that was generated in a folder called ' dist ' that you will see in the root folder of this application that was cloned to your computer.
 
 You can then take that html file and move it into your own project repository on your local machine or do whatever else with the html file that you would like. 
 
