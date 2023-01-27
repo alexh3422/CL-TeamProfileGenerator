@@ -7,7 +7,7 @@ This app will allow users to input information about their employee's/team's and
 please follow the steps below to install the command-line Team Profile Generator and use it
 
 INSTALLATION
-1. clone this project repository onto your computer
+1. clone this project repository onto your computer (Link to repo: https://github.com/alexh3422/CL-TeamProfileGenerator ) 
 2. In the terminal application of your choice, navigate to the root folder of this project
 3. run the command ' npm i ' to install the necessary modules to run the app 
 
