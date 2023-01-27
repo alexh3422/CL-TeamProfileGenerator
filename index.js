@@ -1,12 +1,8 @@
-const employee = require('./lib/employee');
+
 const Manager = require('./lib/manager');
 const Engineer = require('./lib/engineer');
 const Intern = require('./lib/intern');
 const buildHtml = require('./util/generateHtml');
-// const generateManager = require('./util/generateHtml');
-// const generateEngineer = require('./util/generateHtml');
-// const generateIntern = require('./util/generateHtml');
-
 
 
 const inquirer = require('inquirer');
@@ -70,12 +66,12 @@ const questions = [
     }
 ];
 
-const init = async () => { 
+const init = async () => { // async function to use await 
 
     
-    const answers = await inquirer.prompt(questions);
-    let employee;
-    switch(answers.role) {
+    const answers = await inquirer.prompt(questions); // answers is an object with all the answers to the questions
+    let employee; // employee is a variable that will be assigned to a new instance of a class
+    switch(answers.role) { // switch statement to determine which class to create a new instance of
         case 'Manager':
             employee = new Manager(answers.name, answers.id, answers.email, answers.officeNumber);
             break;
@@ -86,14 +82,14 @@ const init = async () => {
             employee = new Intern(answers.name, answers.id, answers.email, answers.school);
             break;
     }
-    team.push(employee);
-    if(answers.addEmployee) {
-        await init();
-    } else {
+    team.push(employee); // push the new employee to the team array
+    if(answers.addEmployee) { // if the user wants to add another employee, run the init function again
+        await init(); // await is used to wait for the init function to finish before moving on to the next line of code
+    } else { // if the user does not want to add another employee, build the html and write it to a file
         console.log(team)
         const html = buildHtml(team);
-       
-        await writeFileAsync(path.join(__dirname, 'dist', 'index.html'), html);
+       //write the html to a file in the generatedHTML folder in the root directory of the project 
+        await writeFileAsync(path.join(__dirname, 'dist', 'index.html'), html); 
 
 
     }
