@@ -34,3 +34,7 @@ Please refer to my github profile at https://www.github.com/alexh3422 for any fu
 <img width="1021" alt="Screenshot of the CL Team Profile Generator application opened up in a terminal window" src="https://user-images.githubusercontent.com/115325648/215018953-a993dfb4-fa89-48f4-a8ae-bb7155f8b765.png">
 
 ### Screenshot of what the generated HTML file will look like 
+<img width="1248" alt="Screenshot of what the generated HTML file will look like " src="https://user-images.githubusercontent.com/115325648/215019595-780692bb-ae49-47f8-b828-ea141742a866.png">
+
+### Screenshot of what the deployed html file will look like 
+<img width="1184" alt="Screenshot of what the deployed html file will look like " src="https://user-images.githubusercontent.com/115325648/215019756-006d22e2-18d4-4133-97c7-cd806dee8630.png">
