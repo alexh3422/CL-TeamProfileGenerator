@@ -87,10 +87,12 @@ const init = async () => { // async function to use await
     if(answers.addEmployee) { // if the user wants to add another employee, run the init function again
         await init(); // await is used to wait for the init function to finish before moving on to the next line of code
     } else { // if the user does not want to add another employee, build the html and write it to a file
-        console.log(team)
+        console.log('building the html page for your team')
         const html = buildHtml(team);
        //write the html to a file in the generatedHTML folder in the root directory of the project 
         await writeFileAsync(path.join(__dirname, 'dist', 'index.html'), html); 
+
+        await console.log ('Your team profile has been generated! Please check the dist folder for your team profile.')
 
 
     }
